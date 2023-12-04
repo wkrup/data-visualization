@@ -13,23 +13,28 @@ import os
 def fn_energy_use():
     energy_html = open('nature_html/energy_page.html', 'r', encoding='utf-8')    
     energy_code = energy_html.read()
-    components.html(energy_code, height=450)
+    components.html(energy_code, width=950,height=450)
     
 
-def nature_area():
+def nature_area_1():
     nature_html = open('nature_html/nature_choropleth.html', 'r', encoding='utf-8')    
     nature_code = nature_html.read()
-    components.html(nature_code, height=450)
+    components.html(nature_code, width=950, height=450)
+
+def nature_area_2():
+    nature_html2 = open('nature_html/nature_bar.html', 'r', encoding='utf-8')
+    nature_code2 = nature_html2.read()
+    components.html(nature_code2, width=950, height=450)
 
 def sewage_cost():
     sewage_html = open('nature_html/sewage_page.html', 'r', encoding='utf-8')  
     sewage_code = sewage_html.read()
-    components.html(sewage_code, height=450)
+    components.html(sewage_code, width=950, height=450)
 
 def atmos_contam():
     atmos_html = open('nature_html/atmos_page.html', 'r', encoding='utf-8')
     atmos_code = atmos_html.read()
-    components.html(atmos_code, height=450)
+    components.html(atmos_code, width=950, height=450)
 
 
 
@@ -44,7 +49,10 @@ st.markdown("### 에너지 소비")
 fn_energy_use()
 
 st.markdown("### 녹지 면적")
-nature_area()
+st.markdown("##### Choropleth")
+nature_area_1()
+st.markdown("##### Bar Graph")
+nature_area_2()
 
 st.markdown("### 하수 처리 비용")
 sewage_cost()
