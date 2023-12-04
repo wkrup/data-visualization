@@ -20,29 +20,22 @@ LOGGER = get_logger(__name__)
 
 def run():
     st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
+        page_title="Data Visualization Project: Team 9",
     )
 
-    st.write("# Welcome to Streamlit! 👋")
+    st.write("# 9조 프로젝트: 도시-환경 이중 변화 시각화")
 
-    st.sidebar.success("Select a demo above.")
+    st.sidebar.success("시각화 카테고리를 선택해주세요.")
 
     st.markdown(
         """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
-        **👈 Select a demo from the sidebar** to see some examples
-        of what Streamlit can do!
-        ### Want to learn more?
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        ### See more complex demos
-        - Use a neural net to [analyze the Udacity Self-driving Car Image
-          Dataset](https://github.com/streamlit/demo-self-driving)
-        - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+        인트로 내용
+        ### 인트로 1.1
+        - 1.1.1
+        - 1.1.2
+        ### 인트로 내용 1.2
+        - 1.2.1
+        - 1.2.2
     """
     )
 
