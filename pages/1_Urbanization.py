@@ -38,10 +38,9 @@ def electricity_regional():
 
 
 def electricity_purpose():
-    pass
-    # electricity_html = open('urban_html/electricity_purpose.html', 'r', encoding='utf-8')  
-    # electricity_code = electricity_html.read()
-    # components.html(electricity_code, width=950, height=450)
+    electricity_html = open('urban_html/electricity_purpose.html', 'r', encoding='utf-8')  
+    electricity_code = electricity_html.read()
+    components.html(electricity_code, width=950, height=450)
 
 
 st.set_page_config(page_title="Urbanization")
