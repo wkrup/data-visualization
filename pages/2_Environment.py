@@ -98,7 +98,7 @@ if env_titles == '대기 오염':
 
 if env_titles == '체감 환경':
     st.markdown("### 체감 환경")
-    st.markdown('###### 2010년 이전에는 10세 이상 조사, 그 외에는 13세 이상 조사')
+    st.markdown('###### 13세 이상을 대상으로 조사')
     nature_perception()
 
 
