@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 def energy_use():
+    #https://discuss.streamlit.io/t/include-an-existing-html-file-in-streamlit-app/5655/2
     energy_html = open('nature_html/energy_page.html', 'r', encoding='utf-8')    
     energy_code = energy_html.read()
     components.html(energy_code, width=950, height=450)
@@ -27,6 +28,26 @@ def atmos_contam():
     atmos_code = atmos_html.read()
     components.html(atmos_code, width=950, height=450)
 
+def nature_perception():
+    nat_perc_html = open('nature_html/nature_perception_page.html', 'r', encoding='utf-8')
+    nat_perc_code = nat_perc_html.read()
+    components.html(nat_perc_code, width=950, height=450)
+
+def park_all():
+    park_html = open('nature_html/park_page.html', 'r', encoding='utf-8')
+    park_code = park_html.read()
+    components.html(park_code, width=950, height=450)
+
+def park_count():
+    park_count_html = open('nature_html/park_count.html', 'r', encoding='utf-8')
+    park_count_code = park_count_html.read()
+    components.html(park_count_code, width=950, height=450)
+
+def park_area():
+    park_area_html = open('nature_html/park_area.html', 'r', encoding='utf-8')
+    park_area_code = park_area_html.read()
+    components.html(park_area_code,  width=950, height=450)
+
 
 
 st.set_page_config(page_title="Environment")
@@ -35,7 +56,7 @@ st.markdown("# 자연 환경")
 
 env_titles = st.sidebar.selectbox(
     '자연 환경',
-    ['에너지 소비', '녹지 면적', '하수 처리 비용', '대기 오염']
+    ['에너지 소비', '녹지 면적', '하수 처리 비용', '대기 오염', '체감 환경', '공원']
 )
 
 
@@ -75,3 +96,22 @@ if env_titles == '대기 오염':
     st.markdown("### 대기 오염")
     atmos_contam()
 
+if env_titles == '체감 환경':
+    st.markdown("### 체감 환경")
+    st.markdown('###### 2010년 이전에는 10세 이상 조사, 그 외에는 13세 이상 조사')
+    nature_perception()
+
+
+if env_titles == '공원':
+    st.markdown("### 공원")
+    park_data = st.radio(
+        "보고 싶은 데이터를 선택하세요",
+        ["둘 다", "공원 개소", "공원 면적"], 
+        horizontal=True
+    )
+    if park_data == '둘 다':
+        park_all()
+    elif park_data == '공원 개소':
+        park_count()  
+    else:
+        park_area()
