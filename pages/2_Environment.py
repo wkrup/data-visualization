@@ -73,7 +73,7 @@ if env_titles == '에너지 소비':
 if env_titles == '녹지 면적':
     st.markdown("### 녹지 면적")
     graph_types = st.radio(
-        "Select graph type",
+        "Select type",
         ["Choropleth", "Bar Graph"], 
         horizontal=True
     )
