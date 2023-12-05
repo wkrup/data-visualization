@@ -78,7 +78,7 @@ if env_titles == '녹지 면적':
         horizontal=True
     )
     if graph_types == 'Choropleth':
-        st.caption("*2006년 은평구 데이터는 누락되었기 때문에 Graph에 등장하지 않습니다.")
+        st.caption("*2006년 은평구 데이터는 누락되었기 때문에 Choropleth에 등장하지 않습니다.")
         nature_area_1()
         st.caption("geojson file from https://github.com/southkorea/seoul-maps")
     else:
