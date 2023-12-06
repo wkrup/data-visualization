@@ -39,12 +39,12 @@ def run():
 
     """
     )
-    st.image('Image\Intro1.png')
+    st.image('Image/Intro1.png')
 
     st.markdown("### 서울에 거주하는 여러가지 이유")
-    st.image('Image\Intro2.png')
+    st.image('Image/Intro2.png')
     st.markdown("### 도시를 구성하는 여러가지 요소")
-    st.image('Image\Intro3.png')
+    st.image('Image/Intro3.png')
 
 
 
