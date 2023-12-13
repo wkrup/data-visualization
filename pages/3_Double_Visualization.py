@@ -21,9 +21,9 @@ def green_energy():
 
 def green_energy_map():
     st.markdown("### 자치구별 전력 에너지 사용량")
-    st.image('Image\out_2020.png')
+    st.image('Image/out_2020.png')
     st.markdown("### 자치구별 녹지 면적")
-    st.image('Image\녹지_2020.png')
+    st.image('Image/녹지_2020.png')
     
 
 
