@@ -21,7 +21,7 @@ def green_energy():
 
 def green_energy_map():
     st.markdown("### 자치구별 전력 에너지 사용량")
-    electricity_html = open('urban_html/electricity_purpose.html', 'r', encoding='utf-8')  
+    electricity_html = open('urban_html/electricity_regional.html', 'r', encoding='utf-8')  
     electricity_code = electricity_html.read()
     components.html(electricity_code, width=950, height=450)
     # st.image('Image/out_2020.png')
