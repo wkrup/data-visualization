@@ -1,5 +1,5 @@
 # Data Analysis and Visualization Project
-Code for Team Project in Data Analysis and Visualization (2023 2nd Semester) class. The project is an interactive web service that visualizes the urbanization of Seoul, South Korea, and the changes in the city's environment. 
+>Code for Team Project in Data Analysis and Visualization (2023 2nd Semester) class. The project is an interactive web service that visualizes the urbanization of Seoul, South Korea, and the changes in the city's environment. 
 
 
 ## Link to Webpage
