@@ -3,7 +3,6 @@ Code for Team Project in Data Analysis and Visualization (2023 2nd Semester) cla
 
 
 ## Link to Webpage
----
 <https://data-visualization-team9.streamlit.app/Environment>
 - - -
 # Welcome to streamlit
